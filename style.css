@@ -27,12 +27,13 @@ nav {
     background-color: rgb(112, 104, 104);
     padding: 2%;
     display: flex;
+    justify-content: space-between; /* Added to ensure proper alignment */
+    align-items: center; /* Added to ensure proper alignment */
 }
 
 .top {
     margin-top: 1%;
-    float: left;
-    margin-left: 590px;
+    margin-left: 10px; /* Adjusted for mobile */
 }
 
 .tf {
@@ -54,13 +55,12 @@ li:hover {
 }
 
 div {
-    margin-left: 300px;
+    margin-left: 10px; /* Adjusted for mobile */
 }
 
 .lefttext {
-    float: left;
-    text-align: center;
-    margin-left: 50px;
+    text-align: center; /* Adjusted for mobile */
+    margin-left: 10px; /* Adjusted for mobile */
     font-size: 12px;
     transition: font-size 0.4s ease;
     color: white;
@@ -73,9 +73,8 @@ div {
 }
 
 .righttext {
-    float: right;
-    text-align: center;
-    margin-right: 50px;
+    text-align: center; /* Adjusted for mobile */
+    margin-right: 10px; /* Adjusted for mobile */
     font-size: 15px;
     transition: font-size 0.4s ease;
     color: white;
@@ -92,20 +91,16 @@ div {
 }
 
 @media screen and (max-width: 768px) {
-    .top,
-    .tf,
-    div,
-    .lefttext,
-    .righttext {
-        margin-left: 0;
-    }
-
-    .tf {
-        margin-left: 0;
-    }
-
     .logo {
         width: 30px;
+    }
+
+    .tf,
+    .lefttext,
+    .righttext,
+    div,
+    .top {
+        margin: 0; /* Reset margin */
     }
 
     nav {
@@ -124,7 +119,6 @@ div {
 
     .lefttext,
     .righttext {
-        padding-top: 10px;
         font-size: 14px;
     }
 }
