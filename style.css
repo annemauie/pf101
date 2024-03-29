@@ -1,37 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(28, 27, 27);
 }
 
-h1{
-    margin-top: 1% ;
+h1 {
+    margin-top: 1%;
     color: antiquewhite;
 }
 
 .logo {
     width: 50px;
     height: auto;
-    transition: width 0.2s ease; 
+    transition: width 0.4s ease;
 }
-
 
 .logo:hover {
-    width: 70px; 
+    width: 70px;
 }
 
-nav{
+nav {
     background-color: rgb(112, 104, 104);
     padding: 2%;
     display: flex;
 }
 
-.top{
-    margin-top: 1% ;
+.top {
+    margin-top: 1%;
     float: left;
     margin-left: 590px;
 }
@@ -41,56 +40,68 @@ nav{
     text-decoration: none;
     margin-left: 15px;
     font-size: 16px;
-    transition: font-size 0.5s ease;
+    transition: font-size 0.4s ease;
     color: white;
 }
 
+.tf:hover {
+    font-size: 20px;
+}
+
 li:hover {
-    font-size: 25px; 
+    font-size: 25px;
     color: blue;
 }
 
-div{
+div {
     margin-left: 300px;
 }
 
-.lefttext{
+.lefttext {
     float: left;
     text-align: center;
     margin-left: 50px;
     font-size: 12px;
-    transition: font-size 0.5s ease;
+    transition: font-size 0.4s ease;
     color: white;
     padding-top: 20px;
 }
 
 .lefttext:hover {
-    font-size: 25px; 
+    font-size: 25px;
     color: blue;
 }
 
-.righttext{
+.righttext {
     float: right;
     text-align: center;
     margin-right: 50px;
     font-size: 15px;
-    transition: font-size 0.5s ease;
+    transition: font-size 0.4s ease;
     color: white;
     padding-top: 20px;
 }
 
 .righttext:hover {
-    font-size: 25px; 
+    font-size: 25px;
     color: blue;
 }
 
-.input{
+.input {
     display: flex;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
+    .top,
+    .tf,
+    div,
+    .lefttext,
+    .righttext {
+        margin-left: 0;
+    }
+
+    .tf {
+        margin-left: 0;
     }
 
     .logo {
@@ -100,28 +111,20 @@ div{
     nav {
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
     }
 
-    .top {
-        margin-left: 0;
+    .input {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .tf {
-        margin-left: 0;
-    }
-
-    div {
-        margin-left: 0;
+    .tf:hover {
+        font-size: 16px;
     }
 
     .lefttext,
     .righttext {
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 15px;
+        padding-top: 10px;
+        font-size: 14px;
     }
 }
