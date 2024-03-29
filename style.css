@@ -88,4 +88,40 @@ div{
     display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
 
+    .logo {
+        width: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .top {
+        margin-left: 0;
+    }
+
+    .tf {
+        margin-left: 0;
+    }
+
+    div {
+        margin-left: 0;
+    }
+
+    .lefttext,
+    .righttext {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 15px;
+    }
+}
