@@ -20,20 +20,20 @@ h1 {
 }
 
 .logo:hover {
-    width: 70px;
+    width: 65px;
 }
 
 nav {
     background-color: rgb(112, 104, 104);
     padding: 2%;
     display: flex;
-    justify-content: space-between; /* Added to ensure proper alignment */
-    align-items: center; /* Added to ensure proper alignment */
+    justify-content: center;
 }
 
 .top {
     margin-top: 1%;
-    margin-left: 10px; /* Adjusted for mobile */
+    float: left;
+    margin-left: 590px;
 }
 
 .tf {
@@ -50,17 +50,14 @@ nav {
 }
 
 li:hover {
-    font-size: 25px;
+    font-size: 15px;
     color: blue;
 }
 
-div {
-    margin-left: 10px; /* Adjusted for mobile */
-}
-
 .lefttext {
-    text-align: center; /* Adjusted for mobile */
-    margin-left: 10px; /* Adjusted for mobile */
+    float: left;
+    text-align: center;
+    margin-left: 50px;
     font-size: 12px;
     transition: font-size 0.4s ease;
     color: white;
@@ -68,13 +65,14 @@ div {
 }
 
 .lefttext:hover {
-    font-size: 25px;
+    font-size: 15px;
     color: blue;
 }
 
 .righttext {
-    text-align: center; /* Adjusted for mobile */
-    margin-right: 10px; /* Adjusted for mobile */
+    float: right;
+    text-align: center;
+    margin-right: 50px;
     font-size: 15px;
     transition: font-size 0.4s ease;
     color: white;
@@ -82,25 +80,33 @@ div {
 }
 
 .righttext:hover {
-    font-size: 25px;
+    font-size: 17px;
     color: blue;
 }
 
 .input {
     display: flex;
 }
-
 @media screen and (max-width: 768px) {
-    .logo {
-        width: 30px;
+    body{
+        width: 85vh;
+    }
+    .top,
+    .tf,
+    div,
+    .lefttext,
+    .righttext {
+        margin: 0;
+        text-align: center;
+        width: 100%; /* Fixed width to ensure no overlapping */
     }
 
-    .tf,
-    .lefttext,
-    .righttext,
-    div,
-    .top {
-        margin: 0; /* Reset margin */
+    .tf {
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 30px;
     }
 
     nav {
@@ -119,6 +125,18 @@ div {
 
     .lefttext,
     .righttext {
+        padding-top: 10px;
         font-size: 14px;
+        margin-left: -15px;
+    }
+    p{
+        margin-left: -10px;
+    }
+    .top,
+    .tf,
+    div,
+    .lefttext,
+    .righttext:hover{
+        font-size: 20px;
     }
 }
