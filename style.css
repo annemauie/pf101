@@ -30,6 +30,10 @@ nav {
     justify-content: center;
 }
 
+.queen{
+    margin: 250px auto;
+}
+
 .top {
     margin-top: 1%;
     float: left;
@@ -87,6 +91,10 @@ li:hover {
 .input {
     display: flex;
 }
+.img2{
+    text-align: center;
+    margin-top: 50px;
+}
 @media screen and (max-width: 768px) {
     body{
         width: 85vh;
@@ -138,5 +146,8 @@ li:hover {
     .lefttext,
     .righttext:hover{
         font-size: 20px;
+    }
+    .img2{
+        text-align: center;
     }
 }
